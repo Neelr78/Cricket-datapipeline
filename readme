@@ -1,0 +1,35 @@
+# 🏏 Cricket Data Pipeline with Airflow & Google Cloud Storage
+
+This project demonstrates a simple but effective data pipeline using [Apache Airflow](https://airflow.apache.org/) to automate the retrieval and storage of cricket player rankings data.
+
+## 🚀 Overview
+
+The DAG (`pipeline.py`) fetches ODI batsmen rankings daily from the [Cricbuzz API](https://rapidapi.com/apidojo/api/cricbuzz-cricket) and uploads the data to a Google Cloud Storage (GCS) bucket in CSV format.
+
+## 🔧 Tech Stack
+
+- Apache Airflow
+- Python
+- Google Cloud Storage
+- RapidAPI (Cricbuzz API)
+
+## 🛠️ Features
+
+- Scheduled to run daily (`@daily`)
+- Uses PythonOperator to execute custom Python logic
+- Retrieves data from a public API
+- Saves rankings into a temporary CSV
+- Uploads the file to GCS automatically
+- Includes retry and timeout configurations
+
+
+## 📦 Requirements
+
+- Airflow
+- Google Cloud SDK
+- `google-cloud-storage` Python package
+- `requests` Python package
+
+Install the required packages:
+```bash
+pip install google-cloud-storage requests apache-airflow
