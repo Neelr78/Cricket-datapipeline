@@ -1,4 +1,4 @@
-# cricbuzz-api-to-gcs-dag
+# cricbuzz-api-to-gcs
 
 An Apache Airflow DAG that fetches player ranking data from the Cricbuzz API and uploads the processed data into Google Cloud Storage (GCS) as a CSV file. This pipeline is triggered and scheduled entirely via the Airflow web interface.
 
@@ -66,16 +66,3 @@ The script contains an API key in plain text. You should move this to a secure l
 - Environment variables
 - Secret managers
 
-Avoid committing sensitive keys in version-controlled repositories.
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Fork this repository and submit a pull request to enhance or extend the functionality.
